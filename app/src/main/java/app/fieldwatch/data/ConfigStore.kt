@@ -352,8 +352,8 @@ class ConfigStore(context: Context) {
             version = CATALOG_V19
         }
         if (version < CATALOG_V20) {
-            if (!settings.keepScreenOn || !settings.onlineLookup) {
-                settings = settings.copy(keepScreenOn = true, onlineLookup = true)
+            if (!settings.keepScreenOn) {
+                settings = settings.copy(keepScreenOn = true)
             }
             version = CATALOG_V20
         }

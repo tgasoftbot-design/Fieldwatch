@@ -440,7 +440,7 @@ fun SettingsScreen(
                 FieldwatchSwitch(settings.onlineLookup, { on -> vm.updateSettings { it.copy(onlineLookup = on) } })
             }
             Text(
-                "On by default. When the phone has internet, Debrief / AI Export reverse-geocode GPS stamps " +
+                "Off by default. When on and the phone has internet, Debrief / AI Export reverse-geocode GPS stamps " +
                     "to street/city, and Reports → Path loads OpenStreetMap tiles under the trace. " +
                     "No Fieldwatch cloud, no API key. Offline, no geocoder, or Privacy mode: Debrief uses coordinates only and Path stays the current north-up trace — no error dialog. " +
                     "Turn off to keep streets and map tiles out of reports and Path. " +

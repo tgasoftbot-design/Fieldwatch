@@ -566,7 +566,7 @@ data class AppSettings(
     val alertShade: Boolean = false,
     val tagLocation: Boolean = true,
     /** Reverse-geocode GPS stamps in Debrief when the phone is online. Default on. */
-    val onlineLookup: Boolean = true,
+    val onlineLookup: Boolean = false,
     val viewMode: ViewMode = ViewMode.BY_CLASS,
     val strengthSort: StrengthSort = StrengthSort.AVERAGE,
     val averageWindowSec: Int = 30,
